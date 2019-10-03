@@ -145,6 +145,11 @@ function createArticle(data) {
   p3.textContent = data.thirdParagraph;
   button.textContent = "\u25bc";
 
+  article.classList.add("article");
+  title.classList.add("h2");
+  date.classList.add("date");
+  button.classList.add("expandButton");
+
   button.addEventListener('click', () => {
     article.classList.toggle('article-open');
   });
